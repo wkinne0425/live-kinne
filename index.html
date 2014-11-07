@@ -1,15 +1,16 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <title>Influence - Bootstrap One Page Theme | Business Website Template</title>
+    <title>Kinne Development</title>
 
     <!-- Meta tags-->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Influence is based on the newest Twitter Bootstrap 3.2, this one page template is fully responsive, easy customize and ready for your business.">
-    <meta name="keywords" content="bootstrap, design, template, templates, theme, themes, business, portfolio, websites, webdesign, one page" />
-    <meta name="author" content="Jiri Cermak">
+    <meta name="description" content="Kinne Development">
+    <meta name="keywords" content="sarasota web, sarasota web developemt, web design, web developemt" />
+    <meta name="author" content="Walker Kinne">
 
     <!-- Bootstrap framework style-->
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
@@ -43,6 +44,8 @@
       <script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7/html5shiv.min.js"></script>
       <script src="http://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+
+    <link href="assets/css/style.css" rel="stylesheet">
     
 </head>
 
@@ -58,7 +61,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <span class="navbar-brand wow fadeIn" data-wow-delay="0s"><span class="text-primary">In</span>fluence</span>
+                <a href="#"><span class="navbar-brand wow fadeIn" data-wow-delay="0s">&lt;Kinne Development /&gt;</span></a>
             </div>
 
             <div class="collapse navbar-collapse " id="bs-navbar-collapse-1">
@@ -92,9 +95,10 @@
         <div class="section bg-filter">
             <div class="container">
                 <div class="jumbotron trn h-center v-center">
-                    <h1 class="wow fadeIn" data-wow-delay=".4s">Welcome to Kinne Development</h1>
+                    <h1 class="wow fadeIn" data-wow-delay=".4s">Web Development Agency</h1>
                     <div class="space-sm"></div>
-                    <p class="wow fadeIn" data-wow-delay="0.45s">This is where I am going to showcase all of my projects</p>
+                    <p id="header-p" class="wow fadeIn" data-wow-delay="0.45s">Welcome to Kinne Developement. Kinne Developemnt is a Web Design and Developement agency
+                        based in South FL. We specilize in fully custome and responsive web sites built inside Wordpress </p>
                     <div class="space-sm"></div>
                     <a href="#s1" class="scroll">
                         <i class="fa fa-angle-down slidedown  wow fadeIn" data-wow-delay="0.5s"></i>
@@ -120,20 +124,20 @@
                 </li>
                 <li class=" ">
                     <a href="#ready" data-toggle="tab" data-wow-delay="0.25s">
-                        <i class="fa fa-plane"></i>
-                        <h3>Ready for use</h3>
+                        <i class="fa fa-wordpress"></i>
+                        <h3>Built with Wordpress</h3>
                     </a>
                 </li>
                 <li class=" ">
                     <a href="#code" data-toggle="tab" data-wow-delay="0.5s">
-                        <i class="fa fa-code"></i>
-                        <h3>Shortcodes</h3>
+                        <i class="fa fa-cogs"></i>
+                        <h3>Custome Theme</h3>
                     </a>
                 </li>
                 <li class=" ">
                     <a href="#font" data-toggle="tab" data-wow-delay="1s">
-                        <i class="fa fa-flag"></i>
-                        <h3>Font Awesome</h3>
+                        <i class="fa fa-globe"></i>
+                        <h3>Hosting &amp; Managment</h3>
                     </a>
                 </li>
             </ul>
@@ -145,9 +149,9 @@
                     <div class="row">
                         <div class="col-md-6 fadeIn wow">
                             <h2 class="big-title text-primary">Fully responsive</h2>
-                            <p class="text-block">We design the websites fully responsive for each devices. It is means that you can comfortable browse our websites on your smartphone, tablet and other devices.
+                            <p class="text-block">We design our websites with Mobile First Technology. This means our sites are built for Smartphones, Tablets, Laptops and Desktops. This will allow YOU to reach every customer possible
                             </p>
-                            <p class="text-block">You can try it now on your laptop, just resize your browser window and every element will start to adapt to new resolution.</p>
+                            <p class="text-block">Go ahead and try this for your self. Go to our website on you smartphone now</p>
                             <div class="space-sm"></div>
                             <a href="#skills" class="btn btn-primary btn-xlg scroll"><i class="fa fa-chevron-down"></i>Look at our skills</a>
                         </div>
@@ -229,7 +233,7 @@
 
             <p class=" sub-title p-no-bottom">We are excited to launch our the Influence theme. We know that our product is going to be big. You may have seen us in the Dinosaurs’ Den where we were we told that we didn’t need them because we were already doing it so well ourselves, so that’s what we have continued to do.</p>
             <div class="space"></div>
-            <ul id="aboutus-slideshow">
+           <!--  <ul id="aboutus-slideshow">
                 <li>
                     <a href="#slide1">
                         <img src="assets/img/DeathtoStock_Wired3a.jpg" alt="">
@@ -245,7 +249,7 @@
                         <img src="assets/img/DeathtoStock_Desk1a.jpg" alt="">
                     </a>
                 </li>
-            </ul>
+            </ul> -->
             <div class="space-lg"></div>
             <div class="row">
                 <div class="col-md-6">
@@ -1089,8 +1093,9 @@
                 <div class="col-md-6 col-sm-7">
 
                     <!-- Contact Form -->
+                    
                     <div id="form-messages"></div>
-                    <form class="form-horizontal" role="form" id="ajax-contact" method="post">
+                    <form class="form-horizontal" role="form"  method="POST" action="/assets/php/mailer.php" enctype="multipart/form-data">
                         <div class="form-group icon">
                             <label for="name" class="col-sm-3 control-label">Full name</label>
                             <div class="col-sm-9 ">
@@ -1126,6 +1131,7 @@
                             </div>
                         </div>
                     </form>
+                   
 
                     <div class="space visible-xs"></div>
                 </div>
@@ -1217,7 +1223,7 @@
     <script src="assets/js/min/influence.min.js"></script>
 
     <!-- Style Switcher -->
-    <div class="style-switcher">
+    <!-- <div class="style-switcher">
         <i class="fa fa-tint switcher-icon switcher-anim"></i>
         <div class="body">
             <h4>Change Color</h4>
@@ -1229,7 +1235,7 @@
                 <li class="yellow"></li>
             </ul>
         </div>
-    </div>
+    </div> -->
 
     <!-- Footer -->
     <div class="footer">
