@@ -1,5 +1,5 @@
 kinnedev
-<<<<<<< HEAD
+
 ======
 
 1. $git checkout master.
@@ -16,6 +16,4 @@ kinnedev
 9. git push prodServer master.
 
 10. Final step is to test all your code!.
-=======
-========
->>>>>>> e23d48caedbf4a7d6e54f9ea77b74a5f6c3486a5
+
