@@ -653,6 +653,7 @@ textarea.form-control {
 .hover-content {
     overflow: hidden;
     position: relative;
+    border: 3px solid black;
 }
 /* Block center - horizontal and vertical */
 
